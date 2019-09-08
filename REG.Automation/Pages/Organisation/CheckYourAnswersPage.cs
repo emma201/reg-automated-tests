@@ -17,6 +17,7 @@ namespace REG.Automation.Pages.Organisation
         }
 
         public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'Check your answers')]"));
+        public IWebElement ChangeContactDetails => driver.FindElement(By.Id("change_contact_detail"));
 
     }
 }

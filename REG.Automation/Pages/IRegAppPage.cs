@@ -8,5 +8,6 @@ namespace REG.Automation.Pages
     public interface IRegAppPage
     {
         IWebElement ContinueButton { get; }
+        IWebElement SubmitButton { get; }
     }
 }

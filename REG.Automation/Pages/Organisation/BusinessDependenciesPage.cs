@@ -7,16 +7,16 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace REG.Automation.Pages.Organisation
 {
-    public class BusinessSetupPage : BasePage
+    public class BusinessDependenciesPage : BasePage
     {
         private readonly IWebDriver driver;
 
-        public BusinessSetupPage(IWebDriver driver) : base(driver)
+        public BusinessDependenciesPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
         }
 
-        public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'Business set up')]"));
+        public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'Business Dependencies')]"));
         public IWebElement NoOption => driver.FindElement(By.Id("opt_business_dependency_no"));
 
     }

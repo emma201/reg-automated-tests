@@ -108,21 +108,9 @@ namespace SmokeTests
             homePage.ApplyOnline();
             typeOfBusinessPage.SelectAndContinue(typeOfBusinessPage.OrganisationOption);
 
-            serviceLocationPage.OwnHomeOption.Click();
-            serviceLocationPage.CarersHomeOption.Click();
-            serviceLocationPage.AdaptedAccommodationOption.Click();
-            serviceLocationPage.Continue();
-
-            serviceTypeOwnHomePage.DomiciliaryCareOption.Click();
-            serviceTypeOwnHomePage.SharedLivesSchemeOption.Click();
-            serviceTypeOwnHomePage.SupportedLivingPackageOption.Click();
-            serviceTypeOwnHomePage.Continue();
-
-            serviceTypeAdaptedAccommodationPage.DomiciliaryCareOption.Click();
-            serviceTypeAdaptedAccommodationPage.SupportedLivingPackageOption.Click();
-            serviceTypeAdaptedAccommodationPage.PersonalCareOption.Click();
-            serviceTypeAdaptedAccommodationPage.Continue();
-
+            serviceLocationPage.SelectAllAndContinue();
+            serviceTypeOwnHomePage.SelectAllAndContinue();
+            serviceTypeAdaptedAccommodationPage.SelectAllAndContinue();
             confirmTaxonomyPage.Continue();
         }
 

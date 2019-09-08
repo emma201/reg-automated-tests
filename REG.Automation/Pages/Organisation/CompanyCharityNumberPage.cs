@@ -7,17 +7,18 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace REG.Automation.Pages.Organisation
 {
-    public class OrganisationNamePage : BasePage
+    public class CompanyCharityNumberPage : BasePage
     {
         private readonly IWebDriver driver;
 
-        public OrganisationNamePage(IWebDriver driver) : base(driver)
+        public CompanyCharityNumberPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
         }
 
         public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'Organisation name')]"));
-        public IWebElement OrganisationName => driver.FindElement(By.Id("OrganisationName"));
+        public IWebElement CompanyNumber => driver.FindElement(By.Id("CompanyNumber"));
+        public IWebElement CharityNumber => driver.FindElement(By.Id("CharityNumber"));
 
     }
 }

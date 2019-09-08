@@ -27,6 +27,11 @@ namespace REG.Automation.Pages
             ContinueButton.Click();
         }
 
+        public void Submit()
+        {
+            SubmitButton.Click();
+        }
+
         public void BackToTasklist()
         {
             TasklistLink.Click();
@@ -34,6 +39,7 @@ namespace REG.Automation.Pages
 
         public string Title => driver.Title;
         public IWebElement ContinueButton => driver.FindElement(By.Id("continue"));
+        public IWebElement SubmitButton => driver.FindElement(By.Id("submit"));
         public IWebElement TasklistLink => driver.FindElement(By.Id("link_back_to_task_list"));
 
     }

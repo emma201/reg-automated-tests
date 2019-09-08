@@ -17,6 +17,7 @@ namespace REG.Automation.Pages.Organisation
         }
 
         public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'Registration history')]"));
+        public IWebElement NoOption => driver.FindElement(By.Id("opt_registered_before_no"));
 
     }
 }

@@ -16,6 +16,14 @@ namespace REG.Automation.Pages.Organisation
             this.driver = driver;
         }
 
+        public void SelectAllAndContinue()
+        {
+            DomiciliaryCareOption.Click();
+            SupportedLivingPackageOption.Click();
+            PersonalCareOption.Click();
+            Continue();
+        }
+
         public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'How will the service be delivered to people in specially adapted accommodation?')]"));
         public IWebElement DomiciliaryCareOption => driver.FindElement(By.Id("question-7"));
         public IWebElement SupportedLivingPackageOption => driver.FindElement(By.Id("question-8"));

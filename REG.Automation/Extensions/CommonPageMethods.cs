@@ -13,5 +13,11 @@ namespace REG.Automation.Extensions
             element.Click();
             page.ContinueButton.Click();
         }
+
+        public static void SelectAndSubmit(this IRegAppPage page, IWebElement element)
+        {
+            element.Click();
+            page.SubmitButton.Click();
+        }
     }
 }
