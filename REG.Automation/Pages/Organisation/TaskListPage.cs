@@ -5,7 +5,7 @@ using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
-namespace REG.Automation.Pages
+namespace REG.Automation.Pages.Organisation
 {
     public class TaskListPage : BasePage
     {

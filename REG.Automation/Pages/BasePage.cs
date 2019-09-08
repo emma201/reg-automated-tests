@@ -28,7 +28,7 @@ namespace REG.Automation.Pages
         }
 
         public string Title => driver.Title;
-        public IWebElement ContinueButton => driver.FindElement(By.Id("submit"));
+        public IWebElement ContinueButton => driver.FindElement(By.Id("continue"));
 
     }
 }

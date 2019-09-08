@@ -7,16 +7,16 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace REG.Automation.Pages
 {
-    public class BusinessTypePage : BasePage
+    public class OrganisationNamePage : BasePage
     {
         private readonly IWebDriver driver;
 
-        public BusinessTypePage(IWebDriver driver) : base(driver)
+        public OrganisationNamePage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
         }
 
-        public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'What type of business are you?')]"));
+        public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'Organisation name')]"));
 
     }
 }

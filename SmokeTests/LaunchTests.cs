@@ -17,7 +17,7 @@ namespace SmokeTests
         IWebDriver driver;
         LoginPage loginPage;
         HomePage homePage;
-        BusinessTypePage businessTypePage;
+        TypeOfBusinessPage typeOfBusiness;
 
         [Fact]
         // Start Page opens and various buttons and links are present
@@ -51,7 +51,7 @@ namespace SmokeTests
             homePage.ApplyOnline();
 
             //assert
-            businessTypePage.Heading.Displayed.Should().BeTrue();
+            typeOfBusiness.Heading.Displayed.Should().BeTrue();
         }
 
         public Launch()
@@ -61,7 +61,7 @@ namespace SmokeTests
             driver = d.CreateDriver();
             loginPage = new LoginPage(driver);
             homePage = new HomePage(driver);
-            businessTypePage = new BusinessTypePage(driver);
+            typeOfBusiness = new TypeOfBusinessPage(driver);
 
             HttpClientHelper.ClearUserData($"***REMOVED***");
         }
