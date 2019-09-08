@@ -27,8 +27,14 @@ namespace REG.Automation.Pages
             ContinueButton.Click();
         }
 
+        public void BackToTasklist()
+        {
+            TasklistLink.Click();
+        }
+
         public string Title => driver.Title;
         public IWebElement ContinueButton => driver.FindElement(By.Id("continue"));
+        public IWebElement TasklistLink => driver.FindElement(By.Id("link_back_to_task_list"));
 
     }
 }

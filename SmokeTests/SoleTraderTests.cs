@@ -21,7 +21,7 @@ namespace SmokeTests
         HomePage homePage;
         TypeOfBusinessPage typeOfBusinessPage;
         UnsupportedBusinessTypePage unsupportedBusinessTypePage;
-        REG.Automation.Pages.SoleTrader.TaskListPage taskListPage;
+        REG.Automation.Pages.SoleTrader.TasklistPage tasklistPage;
         ServiceLocationPage serviceLocationPage;
 
         [Fact]
@@ -43,7 +43,7 @@ namespace SmokeTests
             typeOfBusinessPage.SelectAndContinue(typeOfBusinessPage.SoleTraderOption);
 
             typeOfBusinessPage.GoToUrl(d.Url);
-            taskListPage.ChangeBusinessType();
+            tasklistPage.ChangeBusinessType();
             typeOfBusinessPage.SelectAndContinue(typeOfBusinessPage.OrganisationOption);
 
             // assert
@@ -60,7 +60,7 @@ namespace SmokeTests
             homePage = new HomePage(driver);
             typeOfBusinessPage = new TypeOfBusinessPage(driver);
             unsupportedBusinessTypePage = new UnsupportedBusinessTypePage(driver);
-            taskListPage = new REG.Automation.Pages.SoleTrader.TaskListPage(driver);
+            tasklistPage = new REG.Automation.Pages.SoleTrader.TasklistPage(driver);
             serviceLocationPage = new ServiceLocationPage(driver);
 
             HttpClientHelper.ClearUserData($"***REMOVED***");

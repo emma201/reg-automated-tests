@@ -21,7 +21,7 @@ namespace SmokeTests
         HomePage homePage;
         TypeOfBusinessPage typeOfBusinessPage;
         UnsupportedBusinessTypePage unsupportedBusinessTypePage;
-        REG.Automation.Pages.Partnership.TaskListPage taskListPage;
+        REG.Automation.Pages.Partnership.TasklistPage tasklistPage;
         ServiceLocationPage serviceLocationPage;
 
         [Fact]
@@ -43,7 +43,7 @@ namespace SmokeTests
             typeOfBusinessPage.SelectAndContinue(typeOfBusinessPage.PartnershipOption);
 
             typeOfBusinessPage.GoToUrl(d.Url);
-            taskListPage.ChangeBusinessType();
+            tasklistPage.ChangeBusinessType();
             typeOfBusinessPage.SelectAndContinue(typeOfBusinessPage.OrganisationOption);
 
             // assert
@@ -60,7 +60,7 @@ namespace SmokeTests
             homePage = new HomePage(driver);
             typeOfBusinessPage = new TypeOfBusinessPage(driver);
             unsupportedBusinessTypePage = new UnsupportedBusinessTypePage(driver);
-            taskListPage = new REG.Automation.Pages.Partnership.TaskListPage(driver);
+            tasklistPage = new REG.Automation.Pages.Partnership.TasklistPage(driver);
             serviceLocationPage = new ServiceLocationPage(driver);
 
             HttpClientHelper.ClearUserData($"***REMOVED***");

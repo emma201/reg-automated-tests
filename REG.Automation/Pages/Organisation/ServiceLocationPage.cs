@@ -17,6 +17,9 @@ namespace REG.Automation.Pages.Organisation
         }
 
         public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'Where will the service be provided?')]"));
+        public IWebElement OwnHomeOption => driver.FindElement(By.Id("question-1"));
+        public IWebElement CarersHomeOption => driver.FindElement(By.Id("question-2"));
+        public IWebElement AdaptedAccommodationOption => driver.FindElement(By.Id("question-3"));
 
     }
 }

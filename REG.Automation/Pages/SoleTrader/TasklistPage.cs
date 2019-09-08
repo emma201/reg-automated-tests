@@ -7,11 +7,11 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace REG.Automation.Pages.SoleTrader
 {
-    public class TaskListPage : BasePage
+    public class TasklistPage : BasePage
     {
         private readonly IWebDriver driver;
 
-        public TaskListPage(IWebDriver driver) : base(driver)
+        public TasklistPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
         }
