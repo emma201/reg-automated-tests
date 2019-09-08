@@ -7,16 +7,16 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace REG.Automation.Pages.Organisation
 {
-    public class OrganisationNamePage : BasePage
+    public class ServiceLocationPage : BasePage
     {
         private readonly IWebDriver driver;
 
-        public OrganisationNamePage(IWebDriver driver) : base(driver)
+        public ServiceLocationPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
         }
 
-        public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'Organisation name')]"));
+        public IWebElement Heading => driver.FindElement(By.XPath(".//h1[contains(.,'Where will the service be provided?')]"));
 
     }
 }
